@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mamacats - Наші Оболонські пухнастики</title>
+    <meta
+      name="description"
+      content="Котяча Мама з Оболоні щодня годує, лікує та шукає домівки для вуличних котиків. Дізнайтеся, як допомогти хвостатим."
+    />
+    <meta name="keywords" content="КотоМама, допомога котам, притулок для котів, Оболонь, безпритульні коти, закупівля корму, звіти" />
+    <meta name="author" content="КотоМама" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#c98a2b" />
+    <link rel="canonical" href="https://mamacats.pp.ua/" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mamacats.pp.ua/" />
+    <meta property="og:title" content="Mamacats - Наші Оболонські пухнастики" />
+    <meta property="og:description" content="Котяча Мама з Оболоні щодня годує, лікує та шукає домівки для вуличних котиків. Перегляньте звіти та накладні закупівель корму." />
+    <meta property="og:image" content="https://mamacats.pp.ua/images/banner.jpg" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "КотоМама",
+      "url": "https://mamacats.pp.ua/",
+      "logo": "https://mamacats.pp.ua/images/logo.png",
+      "description": "Ініціатива з порятунку та допомоги безпритульним котам на Оболоні."
+    }
+    </script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap&subset=cyrillic,cyrillic-ext,latin"
+      rel="stylesheet"
+    />
+    <style>
+      /* Кнопка звітів */
+      a.btn-reports,
+      button.btn-reports,
+      summary.btn-reports,
+      .btn-reports,
+      .reports-btn {
+        background: rgba(255, 255, 255, 0.12) !important;
+        background-image: none !important;
+        color: #ffffff !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        box-shadow: none !important;
+        filter: none !important;
+        border-radius: 999px !important;
+        padding: 14px 32px !important;
+        text-decoration: none !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        width: fit-content !important;
+        list-style: none !important;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: all 0.3s ease !important;
+        cursor: pointer;
+      }
+
+      summary.btn-reports::-webkit-details-marker,
+      .reports-btn::-webkit-details-marker {
+        display: none !important;
+      }
+
+      a.btn-reports:hover,
+      button.btn-reports:hover,
+      summary.btn-reports:hover,
+      .btn-reports:hover,
+      .reports-btn:hover {
+        background: rgba(255, 255, 255, 0.25) !important;
+        border-color: rgba(255, 255, 255, 0.6) !important;
+        color: #ffffff !important;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --cream: #e8b04b;
+        --cream-dark: #c98a2b;
+        --cream-deep: #8a5a12;
+        --text: #3a332a;
+        --muted: #8a7f6d;
+        --dark: #2b241a;
+        --light: #faf3e3;
+        --white: #ffffff;
+        --header-h: 90px;
+        --radius: 12px;
+        --radius-lg: 20px;
+        --radius-pill: 999px;
+        --shadow-sm: 0 4px 14px rgba(43, 36, 26, 0.06);
+        --shadow: 0 12px 30px rgba(43, 36, 26, 0.1);
+        --shadow-lg: 0 22px 48px rgba(43, 36, 26, 0.16);
+        --shadow-cream: 0 14px 30px rgba(232, 176, 75, 0.35);
+        --ease: all 0.3s ease;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: var(--header-h);
+        background-color: var(--white);
+      }
+
+      body {
+        margin: 0;
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        color: var(--text);
+        background-color: var(--white);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      a {
+        color: var(--cream-dark);
+        text-decoration: none;
+        transition: color 0.25s ease;
+      }
+
+      a:hover {
+        color: var(--cream-deep);
+      }
+
+      h1, h2, h3, h4, h5 {
+        font-family: "Montserrat", "Open Sans", sans-serif;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: -0.01em;
+        margin: 0 0 0.5em;
+        color: var(--dark);
+      }
+
+      p {
+        margin: 0 0 1em;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .space {
+        height: 40px;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-colored {
+        color: var(--cream-dark);
+      }
+
+      .section {
+        padding: 96px 0;
+      }
+
+      .title {
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .title span,
+      h1 span {
+        color: var(--cream-dark);
+      }
+
+      .separator {
+        width: 64px;
+        height: 4px;
+        background: linear-gradient(90deg, var(--cream), var(--cream-deep));
+        margin: 18px auto 24px;
+        border-radius: 4px;
+      }
+
+      .lead {
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--muted);
+      }
+
+      /* Header */
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.82);
+        backdrop-filter: saturate(180%) blur(12px);
+        -webkit-backdrop-filter: saturate(180%) blur(12px);
+        border-bottom: 1px solid rgba(30, 40, 51, 0.06);
+        box-shadow: 0 2px 16px rgba(30, 40, 51, 0.05);
+      }
+
+      .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: var(--header-h);
+      }
+
+      .header-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .logo img {
+        width: 44px;
+        height: auto;
+      }
+
+      .site-name {
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+      }
+
+      .site-name a {
+        color: var(--dark);
+      }
+
+      .site-slogan {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .main-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 4px;
+      }
+
+      .main-nav a {
+        display: block;
+        padding: 9px 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: var(--dark);
+        border-radius: var(--radius-pill);
+        transition: var(--ease);
+      }
+
+      .main-nav a:hover {
+        color: var(--cream-deep);
+        background: rgba(232, 176, 75, 0.12);
+      }
+
+      .main-nav a.active {
+        color: var(--dark);
+        background: var(--cream);
+        box-shadow: var(--shadow-cream);
+      }
+
+      /* Language Switcher */
+      .lang-switcher {
+        display: flex;
+        align-items: center;
+        background: var(--light);
+        border: 1px solid rgba(43, 36, 26, 0.1);
+        border-radius: var(--radius-pill);
+        padding: 2px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .lang-btn {
+        background: none;
+        border: none;
+        padding: 5px 10px;
+        border-radius: var(--radius-pill);
+        cursor: pointer;
+        color: var(--dark);
+        transition: var(--ease);
+      }
+
+      .lang-btn.active {
+        background: var(--cream-dark);
+        color: var(--white);
+      }
+
+      .nav-toggle {
+        display: none;
+      }
+
+      .nav-toggle-label {
+        display: none;
+        cursor: pointer;
+        width: 34px;
+        height: 26px;
+        position: relative;
+      }
+
+      .nav-toggle-label span,
+      .nav-toggle-label span::before,
+      .nav-toggle-label span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: var(--dark);
+        border-radius: 2px;
+        transition: 0.3s;
+      }
+
+      .nav-toggle-label span {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .nav-toggle-label span::before {
+        top: -9px;
+      }
+
+      .nav-toggle-label span::after {
+        top: 9px;
+      }
+
+      /* Banner */
+      .banner {
+        position: relative;
+        min-height: 92vh;
+        display: flex;
+        align-items: center;
+        background: url("images/banner.jpg") center center / cover no-repeat;
+        margin-top: 0;
+        padding: calc(var(--header-h) + 40px) 0 60px;
+        overflow: hidden;
+      }
+
+      .banner::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(15, 23, 32, 0.55) 0%,
+          rgba(15, 23, 32, 0.45) 40%,
+          rgba(15, 23, 32, 0.82) 100%
+        );
+      }
+
+      .banner-caption {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+      }
+
+      .banner-caption h1 {
+        color: var(--white);
+        font-size: 60px;
+        font-weight: 800;
+        margin-bottom: 24px;
+        text-shadow: 0 2px 30px rgba(0, 0, 0, 0.35);
+        animation: fade-up 0.8s ease both;
+      }
+
+      .banner-caption h1 span {
+        color: var(--cream);
+      }
+
+      .banner-caption .lead {
+        color: rgba(255, 255, 255, 0.92);
+        max-width: 720px;
+        margin: 0 auto 12px;
+        text-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+        animation: fade-up 0.8s ease 0.15s both;
+      }
+
+      .banner-caption .lead:last-of-type {
+        margin-bottom: 32px;
+      }
+
+      .banner-actions {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        margin-top: 8px;
+        animation: fade-up 0.8s ease 0.3s both;
+      }
+
+      @keyframes fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .col-half {
+        flex: 1 1 45%;
+        min-width: 280px;
+      }
+
+      .about .row {
+        align-items: center;
+      }
+
+      .about img {
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-lg);
+        transition: var(--ease);
+      }
+
+      .about img:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 28px 56px rgba(30, 40, 51, 0.2);
+      }
+
+      .list-check {
+        list-style: none;
+        padding: 0;
+        margin: 16px 0 0;
+      }
+
+      .list-check li {
+        position: relative;
+        padding-left: 22px;
+        margin-bottom: 10px;
+      }
+
+      .list-check li::before {
+        content: "\25B6";
+        position: absolute;
+        left: 0;
+        top: 1px;
+        color: var(--cream-dark);
+        font-size: 11px;
+      }
+
+      .bg-tinted {
+        position: relative;
+        padding: 70px 0;
+        background: url("images/bg-image-1.jpg") center center / cover no-repeat fixed;
+      }
+
+      .bg-tinted.image-2 {
+        background-image: url("images/bg-image-2.jpg");
+      }
+
+      .bg-tinted::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(138, 90, 18, 0.92) 0%,
+          rgba(201, 138, 43, 0.85) 100%
+        );
+      }
+
+      .bg-tinted .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      .bg-tinted .title,
+      .bg-tinted h1,
+      .bg-tinted h3,
+      .bg-tinted h4,
+      .bg-tinted p {
+        color: var(--white);
+      }
+
+      .media {
+        display: flex;
+        gap: 18px;
+        margin-bottom: 24px;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: var(--radius);
+        padding: 24px;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: var(--ease);
+      }
+
+      .media:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-4px);
+        box-shadow: 0 18px 36px rgba(90, 62, 18, 0.25);
+      }
+
+      .media.right {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+
+      .media .icon {
+        flex: 0 0 auto;
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.18);
+        border: 2px solid rgba(255, 255, 255, 0.85);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: var(--white);
+        transition: var(--ease);
+      }
+
+      .media:hover .icon {
+        background: var(--white);
+        transform: scale(1.05) rotate(-6deg);
+      }
+
+      .media h4 {
+        margin-bottom: 6px;
+        font-size: 19px;
+        color: var(--white);
+      }
+
+      .cta {
+        background: linear-gradient(135deg, var(--cream-dark) 0%, var(--cream-deep) 100%);
+        padding: 70px 0;
+        text-align: center;
+      }
+
+      .cta h1 {
+        color: var(--white);
+        font-size: 34px;
+        margin-bottom: 26px;
+      }
+
+      .btn-support {
+        display: inline-block;
+        background-color: var(--cream);
+        color: var(--dark);
+        border: 2px solid var(--cream);
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 13px 28px;
+        border-radius: var(--radius-pill);
+        box-shadow: var(--shadow-cream);
+        transition: var(--ease);
+      }
+
+      .btn-support:hover,
+      .btn-support:focus {
+        background-color: var(--cream-dark);
+        border-color: var(--cream-dark);
+        color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 18px 34px rgba(138, 90, 18, 0.45);
+      }
+
+      .btn-lg {
+        padding: 16px 36px;
+        font-size: 15px;
+        margin: 6px;
+      }
+
+      .btn-ghost {
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.7);
+        box-shadow: none;
+      }
+
+      .btn-ghost:hover,
+      .btn-ghost:focus {
+        background-color: var(--white);
+        border-color: var(--white);
+        color: var(--cream-deep);
+      }
+
+      .cta .btn-support {
+        background-color: var(--white);
+        color: var(--cream-dark);
+        border-color: var(--white);
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+      }
+
+      .cta .btn-support:hover,
+      .cta .btn-support:focus {
+        background-color: transparent;
+        color: var(--white);
+        border-color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
+      }
+
+      .portfolio {
+        background: var(--white);
+      }
+
+      .filters {
+        text-align: center;
+        margin: 10px 0 34px;
+      }
+
+      .filter-radio {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        pointer-events: none;
+        clip: rect(0, 0, 0, 0);
+      }
+
+      .filters label {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 22px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--dark);
+        background: var(--light);
+        border: 1px solid rgba(30, 40, 51, 0.06);
+        border-radius: var(--radius-pill);
+        cursor: pointer;
+        transition: var(--ease);
+      }
+
+      .filters label:hover {
+        color: var(--cream-deep);
+        background: rgba(232, 176, 75, 0.12);
+        transform: translateY(-2px);
+      }
+
+      #f-all:checked ~ .filters label[for="f-all"],
+      #f-calm:checked ~ .filters label[for="f-calm"],
+      #f-active:checked ~ .filters label[for="f-active"],
+      #f-shy:checked ~ .filters label[for="f-shy"] {
+        background: var(--cream);
+        border-color: var(--cream);
+        color: var(--dark);
+        box-shadow: var(--shadow-cream);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .grid-item {
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+
+      #f-calm:checked ~ .grid .grid-item:not(.calm),
+      #f-active:checked ~ .grid .grid-item:not(.active-cats),
+      #f-shy:checked ~ .grid .grid-item:not(.shy) {
+        display: none;
+      }
+
+      .image-box {
+        background: var(--white);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow-sm);
+        transition: var(--ease);
+      }
+
+      .image-box:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .image-box .overlay-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--radius) var(--radius) 0 0;
+      }
+
+      .image-box img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(138, 90, 18, 0.78) 0%,
+          rgba(201, 138, 43, 0.88) 100%
+        );
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        opacity: 0;
+        transition: opacity 0.35s ease;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .overlay .plus {
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--white);
+        border-radius: 50%;
+        font-size: 30px;
+        line-height: 1;
+        transform: scale(0.7);
+        transition: transform 0.35s ease;
+      }
+
+      .image-box:hover .overlay {
+        opacity: 1;
+      }
+
+      .image-box:hover .overlay .plus {
+        transform: scale(1);
+      }
+
+      .image-box:hover img {
+        transform: scale(1.08);
+      }
+
+      .btn-block {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        background: var(--white);
+        color: var(--dark);
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        transition: var(--ease);
+      }
+
+      .image-box:hover .btn-block {
+        background: var(--cream);
+        color: var(--dark);
+      }
+
+      /* Modals */
+      .modal {
+        position: fixed;
+        inset: 0;
+        z-index: 2000;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+
+      .modal:target {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .modal-content {
+        background: var(--white);
+        max-width: 800px;
+        width: 100%;
+        max-height: 88vh;
+        overflow-y: auto;
+        border-radius: 12px;
+        transform: translateY(16px);
+        transition: transform 0.3s ease;
+      }
+
+      .modal:target .modal-content {
+        transform: translateY(0);
+      }
+
+      .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 22px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .modal-header h4 {
+        margin: 0;
+      }
+
+      .modal-close {
+        font-size: 26px;
+        line-height: 1;
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .modal-close:hover {
+        color: var(--dark);
+      }
+
+      .modal-body {
+        padding: 22px;
+      }
+
+      .modal-body .row {
+        align-items: center;
+      }
+
+      .modal-body img {
+        border-radius: 8px;
+      }
+
+      /* Testimonials */
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+      }
+
+      .testimonial {
+        display: flex;
+        gap: 16px;
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: var(--radius);
+        padding: 26px;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: var(--ease);
+      }
+
+      .testimonial:hover {
+        background: rgba(255, 255, 255, 0.22);
+        transform: translateY(-5px);
+        box-shadow: 0 18px 36px rgba(90, 62, 18, 0.25);
+      }
+
+      .testimonial img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.7);
+        flex: 0 0 auto;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
+
+      .testimonial h3 {
+        color: var(--white);
+        font-size: 18px;
+        margin-bottom: 6px;
+      }
+
+      .testimonial blockquote {
+        margin: 0;
+        border-left: 3px solid rgba(255, 255, 255, 0.5);
+        padding-left: 14px;
+      }
+
+      .testimonial blockquote p {
+        color: rgba(255, 255, 255, 0.95);
+        margin-bottom: 6px;
+      }
+
+      .testimonial footer {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 13px;
+      }
+
+      .testimonial cite {
+        color: var(--white);
+      }
+
+      /* Секція зі звітами між "Друзі" та "Підтримують" */
+      .reports-wrapper {
+        padding: 50px 0;
+        background: linear-gradient(135deg, var(--cream-dark) 0%, var(--cream-deep) 100%);
+        text-align: center;
+      }
+
+      .reports-dropdown {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .reports-btn {
+        display: inline-block;
+        padding: 16px 36px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        user-select: none;
+        list-style: none;
+        text-align: center;
+      }
+
+      .reports-btn::-webkit-details-marker {
+        display: none;
+      }
+
+      .reports-dropdown[open] .reports-btn {
+        margin-bottom: 24px;
+        background: rgba(0, 0, 0, 0.3) !important;
+        color: var(--white) !important;
+        box-shadow: none;
+      }
+
+      .reports-content-box {
+        background: var(--white);
+        border: 1px solid rgba(43, 36, 26, 0.12);
+        border-radius: var(--radius-lg);
+        padding: 28px;
+        box-shadow: var(--shadow);
+      }
+
+      .table-responsive {
+        overflow-x: auto;
+        margin-bottom: 20px;
+      }
+
+      .report-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+
+      .report-table th, .report-table td {
+        padding: 10px 12px;
+        border: 1px solid #e2d9cc;
+        text-align: left;
+      }
+
+      .report-table th {
+        background-color: var(--dark);
+        color: var(--white);
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+      }
+
+      .report-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .report-gallery img {
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        transition: var(--ease);
+      }
+
+      .report-gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      .sponsors {
+        background: linear-gradient(135deg, var(--cream-dark) 0%, var(--cream-deep) 100%);
+        padding: 56px 0;
+        text-align: center;
+      }
+
+      .sponsors h3 {
+        color: var(--white);
+        margin-bottom: 26px;
+      }
+
+      .sponsors-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .sponsors-list h4 {
+        color: var(--white);
+        margin: 0;
+        font-size: 16px;
+        padding: 10px 22px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: var(--radius-pill);
+        transition: var(--ease);
+      }
+
+      .sponsors-list h4:hover {
+        background: var(--white);
+        color: var(--cream-deep);
+        transform: translateY(-3px);
+      }
+
+      .statement {
+        background: var(--dark);
+        padding: 70px 0;
+        text-align: center;
+      }
+
+      .statement h1 {
+        color: var(--white);
+        font-size: 32px;
+        margin: 0;
+      }
+
+      .statement h1 span {
+        color: var(--cream);
+      }
+
+      .footer {
+        background: var(--light);
+        padding: 70px 0;
+      }
+
+      .footer .large {
+        font-size: 17px;
+        color: var(--muted);
+      }
+
+      .list-icons {
+        list-style: none;
+        padding: 0;
+        margin: 18px 0;
+      }
+
+      .list-icons li {
+        margin-bottom: 10px;
+        color: var(--text);
+      }
+
+      .list-icons .ico {
+        color: var(--cream-dark);
+        margin-right: 10px;
+        font-style: normal;
+      }
+
+      .social-links {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 0;
+        display: flex;
+        gap: 10px;
+      }
+
+      .social-links a {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--dark);
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        transition: var(--ease);
+      }
+
+      .social-links a:hover {
+        background: var(--cream);
+        color: var(--dark);
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-cream);
+      }
+
+      .form-group {
+        margin-bottom: 16px;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #dde5ec;
+        border-radius: var(--radius);
+        font-family: inherit;
+        font-size: 15px;
+        color: var(--text);
+        background: var(--white);
+        transition: var(--ease);
+      }
+
+      .form-control:focus {
+        outline: none;
+        border-color: var(--cream);
+        box-shadow: 0 0 0 4px rgba(232, 176, 75, 0.15);
+      }
+
+      textarea.form-control {
+        resize: vertical;
+        min-height: 140px;
+      }
+
+      .btn-submit {
+        background: var(--cream);
+        color: var(--dark);
+        border: none;
+        padding: 14px 34px;
+        border-radius: var(--radius-pill);
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: var(--shadow-cream);
+        transition: var(--ease);
+      }
+
+      .btn-submit:hover {
+        background: var(--cream-dark);
+        color: var(--white);
+        transform: translateY(-3px);
+        box-shadow: 0 18px 34px rgba(138, 90, 18, 0.45);
+      }
+
+      .subfooter {
+        background: #1a1a1a;
+        padding: 20px 0;
+      }
+
+      .subfooter p {
+        margin: 0;
+        color: #999;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      @media (max-width: 991px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .testimonials-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .banner-caption h1 {
+          font-size: 42px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        :root {
+          --header-h: 74px;
+        }
+
+        .nav-toggle-label {
+          display: block;
+        }
+
+        .main-nav {
+          position: absolute;
+          top: var(--header-h);
+          left: 0;
+          right: 0;
+          background: rgba(255, 255, 255, 0.98);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease;
+        }
+
+        .nav-toggle:checked ~ .main-nav {
+          max-height: 400px;
+        }
+
+        .main-nav ul {
+          flex-direction: column;
+          gap: 0;
+          padding: 8px 0;
+        }
+
+        .main-nav a {
+          padding: 12px 20px;
+          border-radius: 0;
+        }
+
+        .nav-toggle:checked ~ .nav-toggle-label span {
+          background: transparent;
+        }
+        .nav-toggle:checked ~ .nav-toggle-label span::before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+        .nav-toggle:checked ~ .nav-toggle-label span::after {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .testimonials-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .banner {
+          min-height: 520px;
+          background-attachment: scroll;
+        }
+
+        .banner-caption h1 {
+          font-size: 34px;
+        }
+
+        .bg-tinted {
+          background-attachment: scroll;
+        }
+
+        .media.right {
+          flex-direction: row;
+          text-align: left;
+        }
+
+        .title,
+        .banner-caption h1 {
+          font-size: 28px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===================== Header ===================== -->
+    <header class="header">
+      <div class="container">
+        <div class="header-left">
+          <div class="logo">
+            <a href="#banner"><img src="images/logo.png" alt="Логотип КотоМама" width="44" height="44" loading="eager" fetchpriority="high" /></a>
+          </div>
+          <div class="site-name-and-slogan">
+            <div class="site-name"><a href="#banner" data-i18n="siteName">КотоМама</a></div>
+            <div class="site-slogan" data-i18n="siteSlogan">Сайт про Маму і котиків</div>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+          <label class="nav-toggle-label" for="nav-toggle" aria-label="Відкрити меню">
+            <span></span>
+          </label>
+          <nav class="main-nav" aria-label="Головна навігація">
+            <ul>
+              <li><a class="active" href="#banner" data-i18n="navHome">Головна</a></li>
+              <li><a href="#about" data-i18n="navAbout">Про мене</a></li>
+              <li><a href="#services" data-i18n="navHelp">Допомога</a></li>
+              <li><a href="#portfolio" data-i18n="navCats">Котики</a></li>
+              <li><a href="#clients" data-i18n="navFriends">Друзі</a></li>
+              <li><a href="#contact" data-i18n="navContact">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <div class="lang-switcher">
+            <button class="lang-btn active" onclick="switchLang('uk')">UA</button>
+            <button class="lang-btn" onclick="switchLang('en')">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== Banner ===================== -->
+    <section id="banner" class="banner">
+      <div class="banner-caption">
+        <div class="container">
+          <h1 class="text-center" data-i18n="heroTitle">Котяча <span>Мама</span></h1>
+          <p class="lead text-center" data-i18n="quote1">
+            «Хоча всяка чеснота нас до себе вабить, проте найбільше це роблять справедливість і щедрість». — Марк Туллій Цицерон
+          </p>
+          <p class="lead text-center" data-i18n="quote2">«У щедрого багатство невичерпне». — Рігведа</p>
+          <p class="lead text-center" data-i18n="quote3">«Бог любить того, хто дає з радістю». — Біблія</p>
+          <div class="banner-actions">
+            <a href="#services" class="btn-support btn-lg" data-i18n="btnHowToHelp">Як допомогти</a>
+            <a
+              href="https://send.monobank.ua/jar/7FsxLCsU2R"
+              target="_blank"
+              rel="noopener"
+              class="btn-support btn-lg btn-ghost"
+              data-i18n="btnSupportUah"
+              >Підтримати гривнею</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== About ===================== -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h1 class="title" data-i18n="aboutTitle">Про <span>Маму</span></h1>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col-half">
+            <img src="images/portfolio-9.jpg" alt="Моя мама та її підопічні котики" loading="lazy" />
+          </div>
+          <div class="col-half">
+            <p data-i18n="aboutP1">
+              Моя мама присвячує свій вільний час тим, хто не може попросити про допомогу сам. Кожен її ранок починається не з кави, а з обходу вуличних котиків нашого району.
+            </p>
+            <p data-i18n="aboutP2">
+              Вона не просто годує їх, а й лікує, шукає їм нові домівки та стежить за тим, щоб вони були у безпеці. Це непроста праця, яка потребує багато ресурсів та любові.
+            </p>
+            <ul class="list-check">
+              <li data-i18n="aboutLi1">Щоденне годування 15+ котиків</li>
+              <li data-i18n="aboutLi2">Пошук теплих домівок та перетримка</li>
+              <li data-i18n="aboutLi3">Медична допомога та стерилізація</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Services ===================== -->
+    <section id="services" class="bg-tinted">
+      <div class="container">
+        <h1 class="title" data-i18n="servicesTitle">Як підтримати котиків</h1>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col-half">
+            <div class="media right">
+              <div class="icon" aria-hidden="true">&#127860;</div>
+              <div>
+                <h4 data-i18n="serv1Title">Корм та смаколики</h4>
+                <p data-i18n="serv1Desc">Завжди є потреба у сухому та вологому кормі. Навіть один пакетик має значення для голодного котика.</p>
+              </div>
+            </div>
+            <div class="media right">
+              <div class="icon" aria-hidden="true">&#9877;</div>
+              <div>
+                <h4 data-i18n="serv2Title">Медикаменти</h4>
+                <p data-i18n="serv2Desc">Потрібні засоби від паразитів, вітаміни або допомога з оплатою візитів до ветеринара.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-half">
+            <div class="media">
+              <div class="icon" aria-hidden="true">&#127968;</div>
+              <div>
+                <h4 data-i18n="serv3Title">Теплі будиночки</h4>
+                <p data-i18n="serv3Desc">В холодну пору року ми облаштовуємо укриття. Будемо вдячні за старі ковдри або допомогу з будками.</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="icon" aria-hidden="true">&#128101;</div>
+              <div>
+                <h4 data-i18n="serv4Title">Пошук родини</h4>
+                <p data-i18n="serv4Desc">Найкраща допомога — це знайти котику дім. Поширюйте наші пости у соцмережах.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Donate CTA ===================== -->
+    <section class="cta">
+      <div class="container">
+        <h1 data-i18n="ctaTitle">Допомогти хвостатим</h1>
+        <a href="https://www.privat24.ua/send/43gjr" target="_blank" rel="noopener" class="btn-support btn-lg" data-i18n="btnPrivat">Конверт Приват24</a>
+        <a href="https://send.monobank.ua/jar/7FsxLCsU2R" target="_blank" rel="noopener" class="btn-support btn-lg" data-i18n="btnMono">Банка Монобанк</a>
+        <a href="https://pay.a-bank.com.ua/collection/VZPSMSVbbn5VvXJo" target="_blank" rel="noopener" class="btn-support btn-lg" data-i18n="btnAbank">Збір Абанк</a>
+      </div>
+    </section>
+
+    <!-- ===================== Portfolio ===================== -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h1 class="title" data-i18n="portfolioTitle">Наші теплі спогади</h1>
+        <div class="separator"></div>
+        <p class="lead text-center" data-i18n="portfolioLead">
+          Котики, які наповнили наші серця любов'ю.<br />
+          Кожен із них — це окрема історія доброти та відданості.
+        </p>
+        <br />
+
+        <input type="radio" name="cat-filter" id="f-all" class="filter-radio" checked />
+        <input type="radio" name="cat-filter" id="f-calm" class="filter-radio" />
+        <input type="radio" name="cat-filter" id="f-active" class="filter-radio" />
+        <input type="radio" name="cat-filter" id="f-shy" class="filter-radio" />
+
+        <div class="filters">
+          <label for="f-all" data-i18n="filterAll">Усі друзі</label>
+          <label for="f-calm" data-i18n="filterCalm">Мудреці</label>
+          <label for="f-active" data-i18n="filterActive">Розбишаки</label>
+          <label for="f-shy" data-i18n="filterShy">Скромняги</label>
+        </div>
+
+        <div class="grid">
+          <div class="grid-item calm">
+            <div class="image-box">
+              <div class="overlay-container">
+                <img src="images/portfolio-1.jpg" alt="Поважний Старожил" loading="lazy" />
+                <a class="overlay" href="#project-1">
+                  <span class="plus">+</span>
+                  <span data-i18n="readStory">Читати історію</span>
+                </a>
+              </div>
+              <a class="btn-block" href="#project-1" data-i18n="cat1Name">Поважний Старожил</a>
+            </div>
+          </div>
+          <div class="grid-item active-cats">
+            <div class="image-box">
+              <div class="overlay-container">
+                <img src="images/portfolio-2.jpg" alt="Невловимий Громовержець" loading="lazy" />
+                <a class="overlay" href="#project-2">
+                  <span class="plus">+</span>
+                  <span data-i18n="readStory">Читати історію</span>
+                </a>
+              </div>
+              <a class="btn-block" href="#project-2" data-i18n="cat2Name">Невловимий Громовержець</a>
+            </div>
+          </div>
+          <div class="grid-item shy">
+            <div class="image-box">
+              <div class="overlay-container">
+                <img src="images/portfolio-3.jpg" alt="Скромна Красуня" loading="lazy" />
+                <a class="overlay" href="#project-3">
+                  <span class="plus">+</span>
+                  <span data-i18n="readStory">Читати історію</span>
+                </a>
+              </div>
+              <a class="btn-block" href="#project-3" data-i18n="cat3Name">Скромна Красуня</a>
+            </div>
+          </div>
+          <div class="grid-item calm">
+            <div class="image-box">
+              <div class="overlay-container">
+                <img src="images/portfolio-4.jpg" alt="Зимовий Сніжок" loading="lazy" />
+                <a class="overlay" href="#project-4">
+                  <span class="plus">+</span>
+                  <span data-i18n="readStory">Читати історію</span>
+                </a>
+              </div>
+              <a class="btn-block" href="#project-4" data-i18n="cat4Name">Зимовий Сніжок</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="project-1">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 data-i18n="cat1ModalTitle">Душа нашого двору</h4>
+          <a class="modal-close" href="#portfolio" aria-label="Закрити">&times;</a>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-half">
+              <p data-i18n="cat1ModalP1">Цей поважний пан був душею нашої компанії. Він ніколи не поспішав до миски першим, пропускаючи вперед малечу. Справжній джентльмен з мудрим поглядом, який знав ціну кожному доброму слову.</p>
+              <p data-i18n="cat1ModalP2">Він вчив молодих котів спокою та показував, що людина — це передусім друг.</p>
+            </div>
+            <div class="col-half">
+              <img src="images/portfolio-1.jpg" alt="Поважний Старожил" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="project-2">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 data-i18n="cat2ModalTitle">Енергія в чистому вигляді</h4>
+          <a class="modal-close" href="#portfolio" aria-label="Закрити">&times;</a>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-half">
+              <p data-i18n="cat2ModalP1">Його енергії вистачало на весь район! Здавалося, він одночасно перебуває у трьох місцях. Завжди знаходив пригоди, але ввечері обов'язково приходив до мами за своєю порцією ласки.</p>
+              <p data-i18n="cat2ModalP2">Маленький двигун, який ніколи не втомлювався гратися.</p>
+            </div>
+            <div class="col-half">
+              <img src="images/portfolio-2.jpg" alt="Невловимий Громовержець" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="project-3">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 data-i18n="cat3ModalTitle">Тиха відданість</h4>
+          <a class="modal-close" href="#portfolio" aria-label="Закрити">&times;</a>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-half">
+              <p data-i18n="cat3ModalP1">Вона довго не наважувалася підійти близько, лише спостерігала здалеку великими очима. Але терпіння та регулярні сніданки зробили диво.</p>
+              <p data-i18n="cat3ModalP2">Вона стала найбільш відданою подругою, яка зустрічала маму ще за два квартали від дому.</p>
+            </div>
+            <div class="col-half">
+              <img src="images/portfolio-3.jpg" alt="Скромна Красуня" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="project-4">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 data-i18n="cat4ModalTitle">Маленьке диво</h4>
+          <a class="modal-close" href="#portfolio" aria-label="Закрити">&times;</a>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-half">
+              <p data-i18n="cat4ModalP1">Ми знайшли його в найморозніший лютневий ранок. Він був зовсім крихітним і майже втратив надію. Тепер це велика історія про порятунок.</p>
+              <p data-i18n="cat4ModalP2">Це нагадування нам усім, що навіть маленька миска теплої їжі може врятувати цілий світ.</p>
+            </div>
+            <div class="col-half">
+              <img src="images/portfolio-4.jpg" alt="Зимовий Сніжок" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== Testimonials ===================== -->
+    <section id="clients" class="bg-tinted image-2">
+      <div class="container">
+        <h1 class="title" data-i18n="friendsTitle">Наші друзі кажуть</h1>
+        <div class="space"></div>
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <img src="images/testimonial-1.png" alt="Відгук 1" loading="lazy" />
+            <div>
+              <h3 data-i18n="t1Title">Ви неймовірні!</h3>
+              <blockquote>
+                <p data-i18n="t1Text">Дякуємо за нашого Мурчика. Він став справжнім членом родини. Дуже вдячні за вашу турботу про тварин.</p>
+                <footer><span data-i18n="t1Author">Сім'я Олени</span>, <cite data-i18n="t1Loc">Оболонь</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img src="images/testimonial-2.png" alt="Відгук 2" loading="lazy" />
+            <div>
+              <h3 data-i18n="t2Title">Дякуємо!</h3>
+              <blockquote>
+                <p data-i18n="t2Text">Рада допомагати кормом. Бачу, з якою любов'ю Мама ставиться до кожного котика. Це надихає!</p>
+                <footer><span data-i18n="t2Author">Ірина</span>, <cite data-i18n="t2Loc">волонтерка</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img src="images/testimonial-3.png" alt="Відгук 3" loading="lazy" />
+            <div>
+              <h3 data-i18n="t3Title">Супер!</h3>
+              <blockquote>
+                <p data-i18n="t3Text">Взяли вже дорослу кішку, вона дуже вихована та лагідна. Дякуємо, що рятуєте їх від холоду.</p>
+                <footer><span data-i18n="t3Author">Максим</span>, <cite data-i18n="t3Loc">новий господар</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img src="images/testimonial-2.png" alt="Відгук 4" loading="lazy" />
+            <div>
+              <h3 data-i18n="t4Title">Найкращі!</h3>
+              <blockquote>
+                <p data-i18n="t4Text">Привезли ліки та ковдри. Все дуже прозоро, бачили щасливих котів на власні очі.</p>
+                <footer><span data-i18n="t4Author">Тетяна</span>, <cite data-i18n="t4Loc">благодійниця</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img src="images/testimonial-3.png" alt="Відгук 5" loading="lazy" />
+            <div>
+              <h3 data-i18n="t5Title">Неймовірно!</h3>
+              <blockquote>
+                <p data-i18n="t5Text">Мама — людина з величезним серцем. Стільки сил віддавати котикам — це справжній подвиг.</p>
+                <footer><span data-i18n="t5Author">Андрій</span>, <cite data-i18n="t5Loc">сусід</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img src="images/testimonial-1.png" alt="Відгук 6" loading="lazy" />
+            <div>
+              <h3 data-i18n="t6Title">Дякую!</h3>
+              <blockquote>
+                <p data-i18n="t6Text">Ми знайшли тут свою красуню. Тепер наше життя наповнене мурчанням і радістю щодня.</p>
+                <footer><span data-i18n="t6Author">Оксана</span>, <cite data-i18n="t6Loc">власниця кота</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Reports Section ===================== -->
+    <section class="reports-wrapper">
+      <div class="container">
+        <details class="reports-dropdown">
+          <summary class="reports-btn btn-reports" data-i18n="reportsSummary">📊 Наші звіти та накладні закупівель</summary>
+          <div class="reports-content-box">
+
+            <h5>Накладна №16649</h5>
+            <div class="table-responsive">
+              <table class="report-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="tableItem">Найменування</th>
+                    <th data-i18n="tableQty">К-сть</th>
+                    <th data-i18n="tablePrice">Ціна (грн)</th>
+                    <th data-i18n="tableSum">Сума (грн)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>C4P Преміум "З куркою в соусі" 0,085 кг</td><td>96 шт</td><td>11.94</td><td>1146.24</td></tr>
+                  <tr><td>C4P Преміум "З телятиною в соусі" 0,085 кг</td><td>96 шт</td><td>11.94</td><td>1146.24</td></tr>
+                  <tr><td>C4P Преміум "З ягням в соусі" 0,085 кг</td><td>48 шт</td><td>11.94</td><td>573.12</td></tr>
+                  <tr><td>C4P Преміум "З качкою в соусі" 0,085 кг</td><td>48 шт</td><td>11.94</td><td>573.12</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h5>Накладна №16651</h5>
+            <div class="table-responsive">
+              <table class="report-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="tableItem">Найменування</th>
+                    <th data-i18n="tableQty">К-сть</th>
+                    <th data-i18n="tablePrice">Ціна (грн)</th>
+                    <th data-i18n="tableSum">Сума (грн)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>OPTIMEAL коти з кроликом у морквяному желе 0,085 кг</td><td>36 шт</td><td>30.00</td><td>1080.00</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h5>Накладна №16650</h5>
+            <div class="table-responsive">
+              <table class="report-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="tableItem">Найменування</th>
+                    <th data-i18n="tableQty">К-сть</th>
+                    <th data-i18n="tablePrice">Ціна (грн)</th>
+                    <th data-i18n="tableSum">Сума (грн)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>OPTIMEAL коти з ягням та овочами в желе 0,085 кг</td><td>24 шт</td><td>30.00</td><td>720.00</td></tr>
+                  <tr><td>OPTIMEAL коти з тріскою та овочами в желе 0,085 кг</td><td>24 шт</td><td>30.00</td><td>720.00</td></tr>
+                  <tr><td>OPTIMEAL коти з індичкою у гарбузовому соусі 0,085 кг</td><td>24 шт</td><td>30.00</td><td>720.00</td></tr>
+                  <tr><td>C4P Premium сух курка коти 14,0 кг</td><td>1 шт</td><td>2157.12</td><td>2157.12</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p><strong data-i18n="totalSum">Загальна сума закупок: 8 835,84 грн</strong></p>
+
+            <div class="report-gallery">
+              <a href="images/invoice-16649.jpg" target="_blank" rel="noopener"><img src="images/invoice-16649.jpg" alt="Накладна 16649" loading="lazy" /></a>
+              <a href="images/invoice-16650.jpg" target="_blank" rel="noopener"><img src="images/invoice-16650.jpg" alt="Накладна 16650" loading="lazy" /></a>
+              <a href="images/invoice-16651.jpg" target="_blank" rel="noopener"><img src="images/invoice-16651.jpg" alt="Накладна 16651" loading="lazy" /></a>
+              <a href="images/feed-photo-1.jpg" target="_blank" rel="noopener"><img src="images/feed-photo-1.jpg" alt="Фото корму 1" loading="lazy" /></a>
+              <a href="images/feed-photo-2.jpg" target="_blank" rel="noopener"><img src="images/feed-photo-2.jpg" alt="Фото корму 2" loading="lazy" /></a>
+            </div>
+
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===================== Sponsors ===================== -->
+    <section class="sponsors">
+      <div class="container">
+        <h3 data-i18n="sponsorsTitle">Нас підтримують та чим ми годуємо:</h3>
+        <div class="sponsors-list">
+          <h4>Purina</h4>
+          <h4>Josera</h4>
+          <h4>Club 4 Paws</h4>
+          <h4>Royal Canin</h4>
+          <h4>Optimeal</h4>
+          <h4>Brit</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Statement ===================== -->
+    <section class="statement">
+      <div class="container">
+        <h1 data-i18n="statementTitle">Більше <span>15 пухнастиків</span> отримують допомогу щодня!</h1>
+      </div>
+    </section>
+
+    <!-- ===================== Footer ===================== -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <h1 class="title" data-i18n="contactTitle">Зв'яжіться з нами</h1>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col-half">
+            <p class="large" data-i18n="contactDesc">
+              Кожна ваша гривня, пачка корму або просто репост у соцмережах допомагають врятувати життя. Якщо ви хочете підтримати маму та її пухнастих підопічних — напишіть нам!
+            </p>
+            <ul class="list-icons">
+              <li><i class="ico" aria-hidden="true">&#128205;</i> <span data-i18n="contactLoc">Україна, м. Київ (район Оболонь)</span></li>
+              <li>
+                <i class="ico" aria-hidden="true">&#9993;</i>
+                <a href="mailto:mamacats2000@gmail.com">mamacats2000@gmail.com</a>
+              </li>
+              <li>
+                <i class="ico" aria-hidden="true">&#128172;</i>
+                <a href="https://t.me/mamacats_care" target="_blank" rel="noopener">t.me/mamacats_care</a>
+              </li>
+              <li>
+                <i class="ico" aria-hidden="true">&#128247;</i>
+                <a href="https://www.instagram.com/mamacats_care/" target="_blank" rel="noopener">instagram.com/mamacats_care</a>
+              </li>
+            </ul>
+            <ul class="social-links">
+              <li><a href="https://t.me/mamacats_care" target="_blank" rel="noopener" aria-label="Телеграм-канал">Tg</a></li>
+              <li><a href="https://www.instagram.com/mamacats_care/" target="_blank" rel="noopener" aria-label="Інстаграм">Ig</a></li>
+              <li><a href="mailto:mamacats2000@gmail.com" aria-label="Електронна пошта">@</a></li>
+            </ul>
+          </div>
+          <div class="col-half">
+            <form action="https://formsubmit.co/mamacats2000@gmail.com" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="form-group">
+                <label class="sr-only" for="name" data-i18n="labelName">Ім'я</label>
+                <input type="text" class="form-control" id="name" placeholder="Ваше ім'я" name="name" required />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="email" data-i18n="labelEmail">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ваш Email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="message" data-i18n="labelMsg">Повідомлення</label>
+                <textarea class="form-control" rows="8" id="message" placeholder="Напишіть нам..." name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit" data-i18n="btnSubmit">Надіслати</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="subfooter">
+      <div class="container">
+        <p data-i18n="copyright">2026 © Допомога котикам Оболоні. Зроблено з любов'ю.</p>
+      </div>
+    </div>
+
+    <!-- Scrollspy, i18n & Modal Handler Script -->
+    <script>
+      (function () {
+        "use strict";
+
+        var translations = {
+          uk: {
+            siteName: "КотоМама",
+            siteSlogan: "Сайт про Маму і котиків",
+            navHome: "Головна",
+            navAbout: "Про мене",
+            navHelp: "Допомога",
+            navCats: "Котики",
+            navFriends: "Друзі",
+            navContact: "Контакти",
+            heroTitle: 'Котяча <span>Мама</span>',
+            quote1: "«Хоча всяка чеснота нас до себе вабить, проте найбільше це роблять справедливість і щедрість». — Марк Туллій Цицерон",
+            quote2: "«У щедрого багатство невичерпне». — Рігведа",
+            quote3: "«Бог любить того, хто дає з радістю». — Біблія",
+            btnHowToHelp: "Як допомогти",
+            btnSupportUah: "Підтримати гривнею",
+            aboutTitle: 'Про <span>Маму</span>',
+            aboutP1: "Моя мама присвячує свій вільний час тим, хто не може попросити про допомогу сам. Кожен її ранок починається не з кави, а з обходу вуличних котиків нашого району.",
+            aboutP2: "Вона не просто годує їх, а й лікує, шукає їм нові домівки та стежить за тим, щоб вони були у безпеці. Це непроста праця, яка потребує багато ресурсів та любові.",
+            aboutLi1: "Щоденне годування 15+ котиків",
+            aboutLi2: "Пошук теплих домівок та перетримка",
+            aboutLi3: "Медична допомога та стерилізація",
+            servicesTitle: "Як підтримати котиків",
+            serv1Title: "Корм та смаколики",
+            serv1Desc: "Завжди є потреба у сухому та вологому кормі. Навіть один пакетик має значення для голодного котика.",
+            serv2Title: "Медикаменти",
+            serv2Desc: "Потрібні засоби від паразитів, вітаміни або допомога з оплатою візитів до ветеринара.",
+            serv3Title: "Теплі будиночки",
+            serv3Desc: "В холодну пору року ми облаштовуємо укриття. Будемо вдячні за старі ковдри або допомогу з будками.",
+            serv4Title: "Пошук родини",
+            serv4Desc: "Найкраща допомога — це знайти котику дім. Поширюйте наші пости у соцмережах.",
+            ctaTitle: "Допомогти хвостатим",
+            btnPrivat: "Конверт Приват24",
+            btnMono: "Банка Монобанк",
+            btnAbank: "Збір Абанк",
+            portfolioTitle: "Наші теплі спогади",
+            portfolioLead: "Котики, які наповнили наші серця любов'ю.<br />Кожен із них — це окрема історія доброти та відданості.",
+            filterAll: "Усі друзі",
+            filterCalm: "Мудреці",
+            filterActive: "Розбишаки",
+            filterShy: "Скромняги",
+            readStory: "Читати історію",
+            cat1Name: "Поважний Старожил",
+            cat2Name: "Невловимий Громовержець",
+            cat3Name: "Скромна Красуня",
+            cat4Name: "Зимовий Сніжок",
+            cat1ModalTitle: "Душа нашого двору",
+            cat1ModalP1: "Цей поважний пан був душею нашої компанії. Він ніколи не поспішав до миски першим, пропускаючи вперед малечу. Справжній джентльмен з мудрим поглядом, який знав ціну кожному доброму слову.",
+            cat1ModalP2: "Він вчив молодих котів спокою та показував, що людина — це передусім друг.",
+            reportsSummary: "📊 Наші звіти та накладні закупівель",
+            tableItem: "Найменування",
+            tableQty: "К-сть",
+            tablePrice: "Ціна (грн)",
+            tableSum: "Сума (грн)",
+            totalSum: "Загальна сума закупок: 8 835,84 грн",
+            cat2ModalTitle: "Енергія в чистому вигляді",
+            cat2ModalP1: "Його енергії вистачало на весь район! Здавалося, він одночасно перебуває у трьох місцях. Завжди знаходив пригоди, але ввечері обов'язково приходив до мами за своєю порцією ласки.",
+            cat2ModalP2: "Маленький двигун, який ніколи не втомлювався гратися.",
+            cat3ModalTitle: "Тиха відданість",
+            cat3ModalP1: "Вона довго не наважувалася підійти близько, лише спостерігала здалеку великими очима. Але терпіння та регулярні сніданки зробили диво.",
+            cat3ModalP2: "Вона стала найбільш відданою подругою, яка зустрічала маму ще за два квартали від дому.",
+            cat4ModalTitle: "Маленьке диво",
+            cat4ModalP1: "Ми знайшли його в найморозніший лютневий ранок. Він був зовсім крихітним і майже втратив надію. Тепер це велика історія про порятунок.",
+            cat4ModalP2: "Це нагадування нам усім, що навіть маленька миска теплої їжі може врятувати цілий світ.",
+            friendsTitle: "Наші друзі кажуть",
+            t1Title: "Ви неймовірні!",
+            t1Text: "Дякуємо за нашого Мурчика. Він став справжнім членом родини. Дуже вдячні за вашу турботу про тварин.",
+            t1Author: "Сім'я Олени",
+            t1Loc: "Оболонь",
+            t2Title: "Дякуємо!",
+            t2Text: "Рада допомагати кормом. Бачу, з якою любов'ю Мама ставиться до кожного котика. Це надихає!",
+            t2Author: "Ірина",
+            t2Loc: "волонтерка",
+            t3Title: "Супер!",
+            t3Text: "Взяли вже дорослу кішку, вона дуже вихована та лагідна. Дякуємо, що рятуєте їх від холоду.",
+            t3Author: "Максим",
+            t3Loc: "новий господар",
+            t4Title: "Найкращі!",
+            t4Text: "Привезли ліки та ковдри. Все дуже прозоро, бачили щасливих котів на власні очі.",
+            t4Author: "Тетяна",
+            t4Loc: "благодійниця",
+            t5Title: "Неймовірно!",
+            t5Text: "Мама — людина з величезним серцем. Стільки сил віддавати котикам — це справжній подвиг.",
+            t5Author: "Андрій",
+            t5Loc: "сусід",
+            t6Title: "Дякую!",
+            t6Text: "Ми знайшли тут свою красуню. Тепер наше життя наповнене мурчанням і радістю щодня.",
+            t6Author: "Оксана",
+            t6Loc: "власниця кота",
+            sponsorsTitle: "Нас підтримують та чим ми годуємо:",
+            statementTitle: 'Більше <span>15 пухнастиків</span> отримують допомогу щодня!',
+            contactTitle: "Зв'яжіться з нами",
+            contactDesc: "Кожна ваша гривня, пачка корму або просто репост у соцмережах допомагають врятувати життя. Якщо ви хочете підтримати маму та її пухнастих підопічних — напишіть нам!",
+            contactLoc: "Україна, м. Київ (район Оболонь)",
+            labelName: "Ім'я",
+            labelEmail: "Email",
+            labelMsg: "Повідомлення",
+            btnSubmit: "Надіслати",
+            phName: "Ваше ім'я",
+            phEmail: "Ваш Email",
+            phMsg: "Напишіть нам...",
+            copyright: "2026 © Допомога котикам Оболоні. Зроблено з любов'ю."
+          },
+          en: {
+            siteName: "CatMama",
+            siteSlogan: "Website about Mama and local stray cats",
+            navHome: "Home",
+            navAbout: "About",
+            navHelp: "How to Help",
+            navCats: "Cats",
+            navFriends: "Friends",
+            navContact: "Contact",
+            heroTitle: 'Cat <span>Mama</span>',
+            quote1: "“Although every virtue attracts us, justice and generosity do so most of all.” — Marcus Tullius Cicero",
+            quote2: "“The wealth of the generous is unending.” — Rigveda",
+            quote3: "“God loves a cheerful giver.” — The Bible",
+            btnHowToHelp: "How to help",
+            btnSupportUah: "Support via UAH",
+            aboutTitle: 'About <span>Mama</span>',
+            aboutP1: "My mother devotes her free time to those who cannot ask for help themselves. Every morning begins not with coffee, but with a round to feed the stray cats in our district.",
+            aboutP2: "She doesn't just feed them; she provides medical treatment, finds new homes, and ensures they stay safe. It's challenging work requiring dedication and care.",
+            aboutLi1: "Daily feeding of 15+ stray cats",
+            aboutLi2: "Fostering and rehoming",
+            aboutLi3: "Medical treatment and spaying/neutering",
+            servicesTitle: "How to Support the Cats",
+            serv1Title: "Food & Treats",
+            serv1Desc: "Dry and wet food are always needed. Even a single pouch makes a big difference to a hungry cat.",
+            serv2Title: "Medication",
+            serv2Desc: "Flea/tick treatments, vitamins, and vet bill coverage are constantly required.",
+            serv3Title: "Warm Shelters",
+            serv3Desc: "We build shelters during winter. Old blankets and assistance with wooden cat houses are warmly welcomed.",
+            serv4Title: "Finding Families",
+            serv4Desc: "The best help is giving a cat a home. Sharing our posts on social media helps immensely.",
+            ctaTitle: "Help Our Furry Friends",
+            btnPrivat: "Privat24 Envelope",
+            btnMono: "Monobank Jar",
+            btnAbank: "Abank Fundraiser",
+            portfolioTitle: "Warm Memories",
+            portfolioLead: "Cats that filled our hearts with joy.<br />Each of them has a unique story of kindness and resilience.",
+            filterAll: "All Cats",
+            filterCalm: "The Wise",
+            filterActive: "Playful",
+            filterShy: "Shy Ones",
+            readStory: "Read Story",
+            cat1Name: "Respected Senior",
+            cat2Name: "Elusive Thunder",
+            cat3Name: "Shy Beauty",
+            cat4Name: "Winter Snowflake",
+            cat1ModalTitle: "Soul of Our Yard",
+            cat1ModalP1: "This dignified gentleman was the heart of our group. He never rushed to the food bowl first, letting kittens go ahead. A true gentleman with a wise gaze who knew the value of kindness.",
+            cat1ModalP2: "He taught younger cats patience and showed them that humans are friends.",
+            reportsSummary: "📊 Our Reports & Invoices",
+            tableItem: "Item",
+            tableQty: "Qty",
+            tablePrice: "Price (UAH)",
+            tableSum: "Total (UAH)",
+            totalSum: "Total procurement sum: 8 835.84 UAH",
+            cat2ModalTitle: "Pure Energy",
+            cat2ModalP1: "His energy was enough for the whole district! He seemed to be in three places at once. Always seeking adventure, yet returning every evening for affection.",
+            cat2ModalP2: "A little motor that never ran out of playfulness.",
+            cat3ModalTitle: "Quiet Devotion",
+            cat3ModalP1: "She took a long time to come close, watching silently from a distance. But patience and regular meals worked wonders.",
+            cat3ModalP2: "She became the most loyal friend, meeting Mama two blocks away from home.",
+            cat4ModalTitle: "A Little Miracle",
+            cat4ModalP1: "We found him on a freezing February morning. He was tiny and had almost given up hope. Today he represents a great rescue story.",
+            cat4ModalP2: "A reminder to all of us that even a warm bowl of food can save a world.",
+            friendsTitle: "What Our Friends Say",
+            t1Title: "You are amazing!",
+            t1Text: "Thank you for our cat! He has become a true family member. We are deeply grateful for your care.",
+            t1Author: "Olena's Family",
+            t1Loc: "Obolon",
+            t2Title: "Thank you!",
+            t2Text: "Happy to donate food. Seeing the genuine love Mama shares with each cat is inspiring!",
+            t2Author: "Iryna",
+            t2Loc: "volunteer",
+            t3Title: "Awesome!",
+            t3Text: "We adopted an adult cat; she is gentle and well-mannered. Thank you for saving them from the cold.",
+            t3Author: "Maksym",
+            t3Loc: "adopter",
+            t4Title: "The Best!",
+            t4Text: "Brought blankets and medicines. Everything is transparent, and the cats are happy.",
+            t4Author: "Tetiana",
+            t4Loc: "donor",
+            t5Title: "Incredible!",
+            t5Text: "Mama has a huge heart. Giving so much effort to stray animals is a true hero's work.",
+            t5Author: "Andriy",
+            t5Loc: "neighbor",
+            t6Title: "Thank you!",
+            t6Text: "We found our sweet girl here. Now our days are full of purrs and happiness.",
+            t6Author: "Oksana",
+            t6Loc: "cat owner",
+            sponsorsTitle: "Supported by and fed with:",
+            statementTitle: 'Over <span>15 rescue cats</span> receive care every day!',
+            contactTitle: "Contact Us",
+            contactDesc: "Every contribution, food bag, or social media share saves lives. Feel free to message us if you want to support Mama and her cats!",
+            contactLoc: "Kyiv, Ukraine (Obolon district)",
+            labelName: "Name",
+            labelEmail: "Email",
+            labelMsg: "Message",
+            btnSubmit: "Send Message",
+            phName: "Your Name",
+            phEmail: "Your Email",
+            phMsg: "Write to us...",
+            copyright: "2026 © Obolon Stray Cats Support. Made with love."
+          }
+        };
+
+        window.switchLang = function (lang) {
+          var dict = translations[lang];
+          if (!dict) return;
+
+          document.querySelectorAll("[data-i18n]").forEach(function (el) {
+            var key = el.getAttribute("data-i18n");
+            if (dict[key] !== undefined) {
+              el.innerHTML = dict[key];
+            }
+          });
+
+          var nameInput = document.getElementById("name");
+          var emailInput = document.getElementById("email");
+          var msgInput = document.getElementById("message");
+
+          if (nameInput) nameInput.placeholder = dict.phName;
+          if (emailInput) emailInput.placeholder = dict.phEmail;
+          if (msgInput) msgInput.placeholder = dict.phMsg;
+
+          document.querySelectorAll(".lang-btn").forEach(function (btn) {
+            btn.classList.toggle("active", btn.textContent.toLowerCase() === lang);
+          });
+        };
+
+        // --- Закриття модальних вікон при кліку поза їх межами та клавішею Esc ---
+        document.addEventListener("click", function (e) {
+          if (e.target.classList.contains("modal")) {
+            window.location.hash = "#portfolio";
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && window.location.hash.startsWith("#project-")) {
+            window.location.hash = "#portfolio";
+          }
+        });
+
+        // --- Scrollspy ---
+        var navLinks = Array.prototype.slice.call(
+          document.querySelectorAll('.main-nav a[href^="#"]')
+        );
+        if (!navLinks.length) return;
+
+        var targets = navLinks
+          .map(function (link) {
+            var id = link.getAttribute("href").slice(1);
+            var section = id ? document.getElementById(id) : null;
+            return section ? { link: link, section: section } : null;
+          })
+          .filter(Boolean);
+        if (!targets.length) return;
+
+        function headerOffset() {
+          var raw = getComputedStyle(document.documentElement)
+            .getPropertyValue("--header-h")
+            .trim();
+          var value = parseInt(raw, 10);
+          return isNaN(value) ? 90 : value;
+        }
+
+        function setActive(activeLink) {
+          navLinks.forEach(function (link) {
+            var isActive = link === activeLink;
+            link.classList.toggle("active", isActive);
+            if (isActive) {
+              link.setAttribute("aria-current", "page");
+            } else {
+              link.removeAttribute("aria-current");
+            }
+          });
+        }
+
+        function onScroll() {
+          var probe = window.scrollY + headerOffset() + 20;
+          var current = targets[0];
+
+          for (var i = 0; i < targets.length; i++) {
+            if (targets[i].section.offsetTop <= probe) {
+              current = targets[i];
+            }
+          }
+
+          var atBottom =
+            window.innerHeight + window.scrollY >=
+            document.documentElement.scrollHeight - 2;
+          if (atBottom) {
+            current = targets[targets.length - 1];
+          }
+
+          setActive(current.link);
+        }
+
+        var ticking = false;
+        function requestTick() {
+          if (!ticking) {
+            ticking = true;
+            window.requestAnimationFrame(function () {
+              onScroll();
+              ticking = false;
+            });
+          }
+        }
+
+        window.addEventListener("scroll", requestTick, { passive: true });
+        window.addEventListener("resize", requestTick);
+        window.addEventListener("load", onScroll);
+        onScroll();
+      })();
+    </script>
+  </body>
+</html>
